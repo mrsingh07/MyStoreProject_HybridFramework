@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  Test_All</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test_All</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 23 17:22:09 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>289 seconds (289678 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.testcases.AddToCartPageTest.addToCartTest()'><b>addToCartTest</b><br>Test class: com.mystore.testcases.AddToCartPageTest<br>Parameters: t-shirt, 2.0, M</td>
+<td></td>
+<td>9</td>
+<td>com.mystore.testcases.AddToCartPageTest@747edf66</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Company=ABCDEF, Email=mystoredatapro1@gmail.com, Address=EDFG123, FirstName=John, Gender=Mrs, City=San, MobilePhone=8489875678, Month=6, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=Denny, SetPassword=John123, Day=22}</td>
+<td></td>
+<td>12</td>
+<td>com.mystore.testcases.AccountCreationPageTest@55536d9e</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Company=ABCDEF, Email=mystoredatapro2@gmail.com, Address=EDFG123, FirstName=Smith, Gender=Mr, City=San, MobilePhone=8489875679, Month=7, Year=1987, State=Alaska, Zipcode=91437, Country=United States, LastName=Stanley, SetPassword=Smith123, Day=23}</td>
+<td></td>
+<td>12</td>
+<td>com.mystore.testcases.AccountCreationPageTest@55536d9e</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Company=ABCDEF, Email=mystoredatapro3@gmail.com, Address=EDFG123, FirstName=Harry, Gender=Mrs, City=San, MobilePhone=8489875678, Month=8, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=Potter, SetPassword=Harry123, Day=24}</td>
+<td></td>
+<td>11</td>
+<td>com.mystore.testcases.AccountCreationPageTest@55536d9e</td></tr>
+<tr>
+<td title='com.mystore.testcases.EndToEndTest.endToEndTest()'><b>endToEndTest</b><br>Test class: com.mystore.testcases.EndToEndTest<br>Parameters: t-shirt, 2.0, M</td>
+<td></td>
+<td>34</td>
+<td>com.mystore.testcases.EndToEndTest@e7edb54</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.mystore.testcases.LoginPageTest<br>Parameters: harrysingh@gmail.com, mystore123</td>
+<td></td>
+<td>11</td>
+<td>com.mystore.testcases.LoginPageTest@2e55dd0c</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.orderHistoryTest()'><b>orderHistoryTest</b><br>Test class: com.mystore.testcases.HomePageTest<br>Parameters: harrysingh@gmail.com, mystore123</td>
+<td></td>
+<td>6</td>
+<td>com.mystore.testcases.HomePageTest@3d1cfad4</td></tr>
+<tr>
+<td title='com.mystore.testcases.SearchResultPageTest.productAvailabilityTest()'><b>productAvailabilityTest</b><br>Test class: com.mystore.testcases.SearchResultPageTest<br>Parameters: t-shirt</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.SearchResultPageTest@2cd2a21f</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.verifyCreateAccountPage()'><b>verifyCreateAccountPage</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: mystoredata@gmail.com</td>
+<td></td>
+<td>5</td>
+<td>com.mystore.testcases.AccountCreationPageTest@55536d9e</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.verifyLogo()'><b>verifyLogo</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@74455848</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@74455848</td></tr>
+<tr>
+<td title='com.mystore.testcases.OrderPageTest.verifyTotalPrice()'><b>verifyTotalPrice</b><br>Test class: com.mystore.testcases.OrderPageTest<br>Parameters: t-shirt, 2.0, M</td>
+<td></td>
+<td>15</td>
+<td>com.mystore.testcases.OrderPageTest@62230c58</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.wishListTest()'><b>wishListTest</b><br>Test class: com.mystore.testcases.HomePageTest<br>Parameters: harrysingh@gmail.com, mystore123</td>
+<td></td>
+<td>6</td>
+<td>com.mystore.testcases.HomePageTest@3d1cfad4</td></tr>
+</table><p>
+</body>
+</html>
